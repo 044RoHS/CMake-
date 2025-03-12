@@ -2,4 +2,18 @@ cmake_minimum_required(VERSION 3.20.0)
 
 project(GeometryFigure)
 
-add_executable(geometry_figure main.cpp )
+
+set(SOURCE main.cpp)
+
+set (HEADER EquilateralTriangle.h 
+Figure.h 
+IsoscelesTriangle.h 
+Parallelogram.h 
+Quadrilateral.h 
+Rectangle.h 
+Rhombus.h
+RightTriangle.h
+Square.h
+Triangle.h
+)
+add_executable(geometry_figure ${SOURCE} ${HEADER} )
